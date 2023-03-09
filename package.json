@@ -1,0 +1,105 @@
+{
+  "name": "unplugin-vue-named-export",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.27.1",
+  "description": "Named export for Vue SFC.",
+  "keywords": [
+    "unplugin",
+    "rollup",
+    "vite",
+    "esbuild",
+    "webpack"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sxzz/unplugin-vue-named-export#readme",
+  "bugs": {
+    "url": "https://github.com/sxzz/unplugin-vue-named-export/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxzz/unplugin-vue-named-export.git"
+  },
+  "author": "三咲智子 <sxzz@sxzz.moe>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "require": "./dist/vite.js",
+      "import": "./dist/vite.mjs"
+    },
+    "./webpack": {
+      "types": "./dist/webpack.d.ts",
+      "require": "./dist/webpack.js",
+      "import": "./dist/webpack.mjs"
+    },
+    "./rollup": {
+      "types": "./dist/rollup.d.ts",
+      "require": "./dist/rollup.js",
+      "import": "./dist/rollup.mjs"
+    },
+    "./esbuild": {
+      "types": "./dist/esbuild.d.ts",
+      "require": "./dist/esbuild.js",
+      "import": "./dist/esbuild.mjs"
+    },
+    "./*": "./*"
+  },
+  "typesVersions": {
+    "<=4.9": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json,.md",
+    "lint:fix": "pnpm run lint --fix",
+    "build": "tsup && tsx scripts/postbuild.mts",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.0.2",
+    "@vue-macros/common": "^1.1.1",
+    "change-case": "^4.1.2",
+    "magic-string": "^0.30.0",
+    "unplugin": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.21.2",
+    "@sxzz/eslint-config": "^2.4.5",
+    "@types/node": "^18.14.6",
+    "@vue-macros/test-utils": "^1.0.0",
+    "bumpp": "^9.0.0",
+    "eslint": "^8.35.0",
+    "eslint-define-config": "^1.16.0",
+    "fast-glob": "^3.2.12",
+    "prettier": "^2.8.4",
+    "rollup": "^3.18.0",
+    "tsup": "^6.6.3",
+    "tsx": "^3.12.3",
+    "typescript": "^5.0.0-beta",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.2",
+    "vue": "^3.2.47"
+  },
+  "engines": {
+    "node": ">=14.19.0"
+  }
+}
