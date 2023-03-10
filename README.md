@@ -7,7 +7,7 @@ Named export for Vue SFC.
 ## Installation
 
 ```bash
-npm i unplugin-vue-named-export
+npm i -D unplugin-vue-named-export
 ```
 
 <details>
@@ -89,4 +89,4 @@ module.exports = {
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [三咲智子](https://github.com/sxzz)
+[MIT](./LICENSE) License © 2023-PRESENT [三咲智子](https://github.com/sxzz)
