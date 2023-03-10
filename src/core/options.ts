@@ -19,5 +19,6 @@ export function resolveOption(options: Options): OptionsResolved {
   return {
     include: options.include || [/\.vue$/],
     exclude: options.exclude,
+    resolveName: options.resolveName
   }
 }
