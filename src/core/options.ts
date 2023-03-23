@@ -1,24 +1,15 @@
-import type { FilterPattern } from '@rollup/pluginutils'
+import { type BaseOptions } from '@vue-macros/common'
 
-export interface Options {
-  include?: FilterPattern
-  exclude?: FilterPattern
-
+export interface Options extends Pick<BaseOptions, 'include' | 'exclude'> {
   resolveName?(id: string): string | Promise<string>
 }
 
-export type OptionsResolved = Omit<
-  Required<Options>,
-  'exclude' | 'resolveName'
-> & {
-  exclude?: Options['exclude']
-  resolveName?: Options['resolveName']
-}
+export type OptionsResolved = Pick<Required<Options>, 'include'> &
+  Pick<Options, 'exclude' | 'resolveName'>
 
 export function resolveOption(options: Options): OptionsResolved {
   return {
-    include: options.include || [/\.vue$/],
-    exclude: options.exclude,
-    resolveName: options.resolveName
+    include: [/\.vue$/],
+    ...options,
   }
 }

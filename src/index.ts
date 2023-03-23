@@ -1,10 +1,10 @@
 import path from 'node:path'
 import { createUnplugin } from 'unplugin'
-import { createFilter } from '@rollup/pluginutils'
 import { camelCase } from 'change-case'
 import {
-  MagicString,
+  MagicStringBase,
   babelParse,
+  createFilter,
   getLang,
   getTransformResult,
 } from '@vue-macros/common'
@@ -25,7 +25,7 @@ function getNodeStart(node: Node) {
 
 export default createUnplugin<Options | undefined>((rawOptions = {}) => {
   const options = resolveOption(rawOptions)
-  const filter = createFilter(options.include, options.exclude)
+  const filter = createFilter(options)
 
   const name = 'unplugin-vue-named-export'
   return {
@@ -48,7 +48,7 @@ export default createUnplugin<Options | undefined>((rawOptions = {}) => {
       )
       if (!defaultExport) return
 
-      const s = new MagicString(code)
+      const s = new MagicStringBase(code)
       const resolvedName = (options.resolveName || resolveName)(id)
 
       s.overwrite(
