@@ -2,6 +2,7 @@
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import _export_sfc from '/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"ElCard\\",
@@ -15,14 +16,6 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-var _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-
 const elCard = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
 export { elCard };
@@ -31,6 +24,7 @@ export { elCard };
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import _export_sfc from '/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"basic\\",
@@ -44,14 +38,6 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-var _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-
 const basic = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
 export { basic };
@@ -60,6 +46,7 @@ export { basic };
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import _export_sfc from '/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"el-button\\",
@@ -73,14 +60,6 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-var _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-
 const elButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
 export { elButton };
@@ -89,6 +68,7 @@ export { elButton };
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import _export_sfc from '/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"my_button\\",
@@ -101,14 +81,6 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-
-var _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
 
 const myButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
