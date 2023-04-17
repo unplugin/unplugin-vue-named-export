@@ -86,7 +86,7 @@
     "@vue-macros/test-utils": "^1.0.2",
     "bumpp": "^9.1.0",
     "eslint": "^8.38.0",
-    "eslint-define-config": "^1.17.0",
+    "eslint-define-config": "^1.18.0",
     "fast-glob": "^3.2.12",
     "prettier": "^2.8.7",
     "tsup": "^6.7.0",
