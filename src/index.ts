@@ -8,9 +8,8 @@ import {
   getLang,
   getTransformResult,
 } from '@vue-macros/common'
-import { resolveOption } from './core/options'
-import type { ExportDefaultDeclaration, Node } from '@babel/types'
-import type { Options } from './core/options'
+import { type ExportDefaultDeclaration, type Node } from '@babel/types'
+import { type Options, resolveOption } from './core/options'
 
 function resolveName(id: string) {
   return camelCase(path.basename(id, 'vue'))
