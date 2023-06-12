@@ -2,7 +2,7 @@
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '/plugin-vue/export-helper';
+import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"ElCard\\",
@@ -24,7 +24,7 @@ export { elCard };
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '/plugin-vue/export-helper';
+import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"basic\\",
@@ -46,7 +46,7 @@ export { basic };
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '/plugin-vue/export-helper';
+import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"el-button\\",
@@ -68,7 +68,7 @@ export { elButton };
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '/plugin-vue/export-helper';
+import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"my_button\\",
