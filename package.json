@@ -82,7 +82,7 @@
   "devDependencies": {
     "@babel/types": "^7.22.5",
     "@sxzz/eslint-config": "^3.0.0",
-    "@types/node": "^18.16.17",
+    "@types/node": "^20.3.1",
     "@vue-macros/test-utils": "^1.0.5",
     "bumpp": "^9.1.1",
     "eslint": "^8.42.0",

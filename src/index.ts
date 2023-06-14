@@ -38,9 +38,7 @@ export default createUnplugin<Options | undefined>((rawOptions = {}) => {
     transform(code, id) {
       const lang = getLang(id)
 
-      const program = babelParse(code, lang, {
-        sourceType: 'module',
-      })
+      const program = babelParse(code, lang)
       const defaultExport = program.body.find(
         (node): node is ExportDefaultDeclaration =>
           node.type === 'ExportDefaultDeclaration'
