@@ -1,6 +1,6 @@
 {
   "name": "unplugin-vue-named-export",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "packageManager": "pnpm@8.6.5",
   "description": "Named export for Vue SFC.",
   "keywords": [
