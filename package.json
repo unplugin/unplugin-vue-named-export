@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-named-export",
   "version": "0.1.4",
-  "packageManager": "pnpm@8.6.5",
+  "packageManager": "pnpm@8.6.7",
   "description": "Named export for Vue SFC.",
   "keywords": [
     "unplugin",
@@ -90,16 +90,16 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@vue-macros/common": "^1.4.0",
+    "@vue-macros/common": "^1.5.0",
     "change-case": "^4.1.2",
     "unplugin": "^1.3.2"
   },
   "devDependencies": {
     "@babel/types": "^7.22.5",
     "@sxzz/eslint-config": "^3.1.2",
-    "@sxzz/prettier-config": "^1.0.3",
-    "@types/node": "^20.4.0",
-    "@vue-macros/test-utils": "^1.0.5",
+    "@sxzz/prettier-config": "^1.0.4",
+    "@types/node": "^20.4.1",
+    "@vue-macros/test-utils": "^1.0.8",
     "bumpp": "^9.1.1",
     "eslint": "^8.44.0",
     "eslint-define-config": "^1.21.0",
