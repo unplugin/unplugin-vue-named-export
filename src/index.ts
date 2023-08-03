@@ -5,8 +5,8 @@ import {
   MagicStringBase,
   babelParse,
   createFilter,
+  generateTransform,
   getLang,
-  getTransformResult,
 } from '@vue-macros/common'
 import { type ExportDefaultDeclaration, type Node } from '@babel/types'
 import { type Options, resolveOption } from './core/options'
@@ -54,7 +54,7 @@ export default createUnplugin<Options | undefined>((rawOptions = {}) => {
         `export const ${resolvedName} = `
       )
 
-      return getTransformResult(s, id)
+      return generateTransform(s, id)
     },
   }
 })
