@@ -22,7 +22,7 @@ function getNodeStart(node: Node) {
   return node.start!
 }
 
-export default createUnplugin<Options | undefined>((rawOptions = {}) => {
+export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
   const options = resolveOption(rawOptions)
   const filter = createFilter(options)
 
