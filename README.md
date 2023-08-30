@@ -1,6 +1,6 @@
 # unplugin-vue-named-export [![npm](https://img.shields.io/npm/v/unplugin-vue-named-export.svg)](https://npmjs.com/package/unplugin-vue-named-export)
 
-[![Unit Test](https://github.com/sxzz/unplugin-vue-named-export/actions/workflows/unit-test.yml/badge.svg)](https://github.com/sxzz/unplugin-vue-named-export/actions/workflows/unit-test.yml)
+[![Unit Test](https://github.com/unplugin/unplugin-vue-named-export/actions/workflows/unit-test.yml/badge.svg)](https://github.com/unplugin/unplugin-vue-named-export/actions/workflows/unit-test.yml)
 
 Named export for Vue SFC.
 
