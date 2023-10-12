@@ -22,6 +22,25 @@ export { elCard };
 "
 `;
 
+exports[`fixtures > tests/fixtures/UPPER-CASE.vue 1`] = `
+"import { defineComponent } from 'vue';
+import _export_sfc from '[NULL]/plugin-vue/export-helper';
+
+var _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: \\"UPPER-CASE\\",
+  setup(__props) {
+    console.log(\\"UPPER-CASE\\");
+    return () => {
+    };
+  }
+});
+
+const upperCase = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+
+export { upperCase };
+"
+`;
+
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
