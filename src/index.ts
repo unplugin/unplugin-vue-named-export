@@ -1,6 +1,4 @@
-import path from 'node:path'
 import { createUnplugin } from 'unplugin'
-import { camelCase } from 'change-case'
 import {
   MagicStringBase,
   babelParse,
@@ -9,11 +7,8 @@ import {
   getLang,
 } from '@vue-macros/common'
 import { type Options, resolveOption } from './core/options'
+import { resolveName } from './core/utils'
 import type { ExportDefaultDeclaration, Node } from '@babel/types'
-
-function resolveName(id: string) {
-  return camelCase(path.basename(id, 'vue'))
-}
 
 function getNodeStart(node: Node) {
   if (node.leadingComments && node.leadingComments.length > 0) {

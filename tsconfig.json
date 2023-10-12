@@ -12,6 +12,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src", "tests"],
-  "exclude": ["tests/fixtures"]
+  "vueCompilerOptions": {
+    "plugins": ["./dist/volar.js"]
+  },
+  "include": ["src", "tests"]
 }

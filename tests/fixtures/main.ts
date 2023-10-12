@@ -1,0 +1,5 @@
+export { basic } from './basic.vue'
+export { elCard } from './ElCard.vue'
+export { elButton } from './el-button.vue'
+export { myButton } from './my_button.vue'
+export { upperCase } from './UPPER-CASE.vue'
