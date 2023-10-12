@@ -79,6 +79,26 @@ module.exports = {
 
 <br></details>
 
+## Usage
+
+```ts
+import { myComponent } from './MyComponent.vue'
+import { myCard } from './my-card.vue'
+import { myFooter } from './my_footer.vue'
+```
+
+### Volar
+
+```jsonc
+// tsconfig.json
+{
+  // ...
+  "vueCompilerOptions": {
+    "plugins": ["unplugin-vue-named-export/volar"]
+  }
+}
+```
+
 ## Sponsors
 
 <p align="center">
