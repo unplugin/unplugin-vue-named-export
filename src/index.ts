@@ -8,9 +8,9 @@ import {
 } from '@vue-macros/common'
 import { type Options, resolveOption } from './core/options'
 import { resolveName } from './core/utils'
-import type { ExportDefaultDeclaration, Node } from '@babel/types'
+import type * as t from '@babel/types'
 
-function getNodeStart(node: Node) {
+function getNodeStart(node: t.Node) {
   if (node.leadingComments && node.leadingComments.length > 0) {
     return node.leadingComments[0].start!
   }
@@ -35,7 +35,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
 
       const program = babelParse(code, lang)
       const defaultExport = program.body.find(
-        (node): node is ExportDefaultDeclaration =>
+        (node): node is t.ExportDefaultDeclaration =>
           node.type === 'ExportDefaultDeclaration'
       )
       if (!defaultExport) return
