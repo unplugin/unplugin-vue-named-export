@@ -30,7 +30,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
       return filter(id)
     },
 
-    transform(code, id) {
+    async transform(code, id) {
       const lang = getLang(id)
 
       const program = babelParse(code, lang)
@@ -41,7 +41,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
       if (!defaultExport) return
 
       const s = new MagicStringBase(code)
-      const resolvedName = (options.resolveName || resolveName)(id)
+      const resolvedName = await (options.resolveName || resolveName)(id)
 
       s.overwrite(
         defaultExport.start!,
