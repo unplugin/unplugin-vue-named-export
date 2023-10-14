@@ -70,6 +70,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
@@ -95,7 +96,8 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
     "vitest": "^0.34.6",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.19"
   },
   "engines": {
     "node": ">=16.14.0"
