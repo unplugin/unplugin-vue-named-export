@@ -81,10 +81,12 @@ module.exports = {
 
 ## Usage
 
+Use pascal case named exports in Vue SFC.
+
 ```ts
-import { myComponent } from './MyComponent.vue'
-import { myCard } from './my-card.vue'
-import { myFooter } from './my_footer.vue'
+import { MyComponent } from './MyComponent.vue'
+import { MyCard } from './my-card.vue'
+import { MyFooter } from './my_footer.vue'
 ```
 
 ### Volar

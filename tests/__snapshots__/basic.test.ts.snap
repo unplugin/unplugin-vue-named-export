@@ -16,9 +16,9 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const elCard = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const ElCard = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { elCard };
+export { ElCard };
 "
 `;
 
@@ -35,9 +35,9 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const upperCase = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const UpperCase = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { upperCase };
+export { UpperCase };
 "
 `;
 
@@ -57,9 +57,9 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const basic = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const Basic = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { basic };
+export { Basic };
 "
 `;
 
@@ -79,9 +79,9 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const elButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const ElButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { elButton };
+export { ElButton };
 "
 `;
 
@@ -101,8 +101,8 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const myButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const MyButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { myButton };
+export { MyButton };
 "
 `;
