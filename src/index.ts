@@ -49,6 +49,10 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
         `export const ${resolvedName} = `
       )
 
+      if (!options.removeDefault) {
+        s.appendLeft(defaultExport.end!, `\nexport default ${resolvedName};`)
+      }
+
       return generateTransform(s, id)
     },
   }

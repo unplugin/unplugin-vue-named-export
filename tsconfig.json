@@ -13,7 +13,10 @@
     "skipLibCheck": true
   },
   "vueCompilerOptions": {
-    "plugins": ["./dist/volar.js"]
+    "plugins": ["./dist/volar.js"],
+    "namedExport": {
+      "removeDefault": false
+    }
   },
   "include": ["src", "tests"]
 }

@@ -18,7 +18,7 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
 
 const ElCard = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { ElCard };
+export { ElCard, ElCard as default };
 "
 `;
 
@@ -37,7 +37,7 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
 
 const UpperCase = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { UpperCase };
+export { UpperCase, UpperCase as default };
 "
 `;
 
@@ -59,7 +59,7 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
 
 const Basic = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { Basic };
+export { Basic, Basic as default };
 "
 `;
 
@@ -81,7 +81,7 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
 
 const ElButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { ElButton };
+export { ElButton, ElButton as default };
 "
 `;
 
@@ -103,6 +103,6 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
 
 const MyButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
 
-export { MyButton };
+export { MyButton, MyButton as default };
 "
 `;

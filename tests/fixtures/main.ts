@@ -1,4 +1,4 @@
-export { Basic } from './basic.vue'
+export { Basic, default as BasicDefault } from './basic.vue'
 export { ElCard } from './ElCard.vue'
 export { ElButton } from './el-button.vue'
 export { MyButton } from './my_button.vue'

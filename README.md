@@ -18,7 +18,11 @@ npm i -D unplugin-vue-named-export
 import VueNamedExport from 'unplugin-vue-named-export/vite'
 
 export default defineConfig({
-  plugins: [VueNamedExport()],
+  plugins: [
+    VueNamedExport({
+      /* options */
+    }),
+  ],
 })
 ```
 
@@ -32,7 +36,11 @@ export default defineConfig({
 import VueNamedExport from 'unplugin-vue-named-export/rollup'
 
 export default {
-  plugins: [VueNamedExport()],
+  plugins: [
+    VueNamedExport({
+      /* options */
+    }),
+  ],
 }
 ```
 
@@ -46,7 +54,11 @@ export default {
 import { build } from 'esbuild'
 
 build({
-  plugins: [require('unplugin-vue-named-export/esbuild')()],
+  plugins: [
+    require('unplugin-vue-named-export/esbuild')({
+      /* options */
+    }),
+  ],
 })
 ```
 
@@ -59,21 +71,11 @@ build({
 // webpack.config.js
 module.exports = {
   /* ... */
-  plugins: [require('unplugin-vue-named-export/webpack')()],
-}
-```
-
-<br></details>
-
-<details>
-<summary>Vue CLI</summary><br>
-
-```ts
-// vue.config.js
-module.exports = {
-  configureWebpack: {
-    plugins: [require('unplugin-vue-named-export/webpack')()],
-  },
+  plugins: [
+    require('unplugin-vue-named-export/webpack')({
+      /* options */
+    }),
+  ],
 }
 ```
 
@@ -89,14 +91,41 @@ import { MyCard } from './my-card.vue'
 import { MyFooter } from './my_footer.vue'
 ```
 
+### Options
+
+```ts
+type Options = {
+  include?: string | RegExp | (string | RegExp)[]
+  exclude?: string | RegExp | (string | RegExp)[]
+
+  /**
+   * Convert filename to export name
+   * @default pascalCaseFn
+   */
+  resolveName?(id: string): string | Promise<string>
+  /**
+   * Whether to keep default export
+   * @default false
+   */
+  removeDefault?: boolean
+}
+```
+
 ### Volar
+
+Support only pascal case named export for Volar.
 
 ```jsonc
 // tsconfig.json
 {
   // ...
   "vueCompilerOptions": {
-    "plugins": ["unplugin-vue-named-export/volar"]
+    "plugins": ["unplugin-vue-named-export/volar"],
+
+    "namedExport": {
+      // defaults to false
+      "removeDefault": false
+    }
   }
 }
 ```
