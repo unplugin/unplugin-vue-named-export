@@ -1,11 +1,7 @@
 import { createUnplugin } from 'unplugin'
-import {
-  MagicStringBase,
-  babelParse,
-  createFilter,
-  generateTransform,
-  getLang,
-} from '@vue-macros/common'
+import { babelParse, getLang } from 'ast-kit'
+import { createFilter } from '@rollup/pluginutils'
+import { MagicStringBase, generateTransform } from 'magic-string-ast'
 import { type Options, resolveOption } from './core/options'
 import { resolveName } from './core/utils'
 import type * as t from '@babel/types'
@@ -19,7 +15,7 @@ function getNodeStart(node: t.Node) {
 
 export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
   const options = resolveOption(rawOptions)
-  const filter = createFilter(options)
+  const filter = createFilter(options.include, options.exclude)
 
   const name = 'unplugin-vue-named-export'
   return {

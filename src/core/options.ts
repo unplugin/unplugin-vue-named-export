@@ -1,6 +1,11 @@
-import type { BaseOptions, MarkRequired } from '@vue-macros/common'
+import type { FilterPattern } from '@rollup/pluginutils'
 
-export interface Options extends Pick<BaseOptions, 'include' | 'exclude'> {
+type MarkRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>
+
+export interface Options {
+  include?: FilterPattern
+  exclude?: FilterPattern
+
   /**
    * Convert filename to export name
    * @default pascalCaseFn
