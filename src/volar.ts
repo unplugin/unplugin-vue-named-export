@@ -13,7 +13,7 @@ const plugin: VueLanguagePlugin = ({ vueCompilerOptions }) => {
         replace(
           embeddedFile.content,
           'export default ',
-          `export const ${exportedName} = `
+          `export const ${exportedName} = `,
         )
       else
         replace(embeddedFile.content, /export default .*/, (m) => {

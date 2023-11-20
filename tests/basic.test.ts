@@ -21,6 +21,6 @@ describe('fixtures', async () => {
           target: 'esnext',
         }),
       ]),
-    { cwd: path.resolve(__dirname, '..'), promise: true }
+    { cwd: path.resolve(__dirname, '..'), promise: true },
   )
 })
