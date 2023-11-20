@@ -1,9 +1,10 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
+\\"use strict\\";
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"ElCard\\",
   setup(__props) {
@@ -26,6 +27,7 @@ exports[`fixtures > tests/fixtures/UPPER-CASE.vue 1`] = `
 "import { defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
+\\"use strict\\";
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"UPPER-CASE\\",
   setup(__props) {
@@ -42,9 +44,10 @@ export { UpperCase, UpperCase as default };
 `;
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
+\\"use strict\\";
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"basic\\",
   setup(__props) {
@@ -64,9 +67,10 @@ export { Basic, Basic as default };
 `;
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
+\\"use strict\\";
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"el-button\\",
   setup(__props) {
@@ -86,9 +90,10 @@ export { ElButton, ElButton as default };
 `;
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
+\\"use strict\\";
 var _sfc_main = /* @__PURE__ */ defineComponent({
   __name: \\"my_button\\",
   setup(__props) {

@@ -32,7 +32,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
       const program = babelParse(code, lang)
       const defaultExport = program.body.find(
         (node): node is t.ExportDefaultDeclaration =>
-          node.type === 'ExportDefaultDeclaration'
+          node.type === 'ExportDefaultDeclaration',
       )
       if (!defaultExport) return
 
@@ -42,7 +42,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
       s.overwrite(
         defaultExport.start!,
         getNodeStart(defaultExport.declaration),
-        `export const ${resolvedName} = `
+        `export const ${resolvedName} = `,
       )
 
       if (!options.removeDefault) {
