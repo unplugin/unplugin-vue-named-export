@@ -4,14 +4,14 @@ exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
 "import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
-\\"use strict\\";
+"use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: \\"ElCard\\",
+  __name: "ElCard",
   setup(__props) {
-    console.log(\\"ElCard\\");
+    console.log("ElCard");
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock(\\"div\\", null, [
-        renderSlot(_ctx.$slots, \\"default\\")
+      return openBlock(), createElementBlock("div", null, [
+        renderSlot(_ctx.$slots, "default")
       ]);
     };
   }
@@ -27,11 +27,11 @@ exports[`fixtures > tests/fixtures/UPPER-CASE.vue 1`] = `
 "import { defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
-\\"use strict\\";
+"use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: \\"UPPER-CASE\\",
+  __name: "UPPER-CASE",
   setup(__props) {
-    console.log(\\"UPPER-CASE\\");
+    console.log("UPPER-CASE");
     return () => {
     };
   }
@@ -47,14 +47,14 @@ exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
-\\"use strict\\";
+"use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: \\"basic\\",
+  __name: "basic",
   setup(__props) {
-    console.log(\\"basic\\");
+    console.log("basic");
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock(\\"div\\", null, [
-        renderSlot(_ctx.$slots, \\"default\\")
+      return openBlock(), createElementBlock("div", null, [
+        renderSlot(_ctx.$slots, "default")
       ]);
     };
   }
@@ -70,14 +70,14 @@ exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
 "import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
-\\"use strict\\";
+"use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: \\"el-button\\",
+  __name: "el-button",
   setup(__props) {
-    console.log(\\"el-button\\");
+    console.log("el-button");
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock(\\"div\\", null, [
-        renderSlot(_ctx.$slots, \\"default\\")
+      return openBlock(), createElementBlock("div", null, [
+        renderSlot(_ctx.$slots, "default")
       ]);
     };
   }
@@ -93,14 +93,14 @@ exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
 "import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
-\\"use strict\\";
+"use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: \\"my_button\\",
+  __name: "my_button",
   setup(__props) {
-    console.log(\\"my_button\\");
+    console.log("my_button");
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock(\\"div\\", null, [
-        renderSlot(_ctx.$slots, \\"default\\")
+      return openBlock(), createElementBlock("div", null, [
+        renderSlot(_ctx.$slots, "default")
       ]);
     };
   }
