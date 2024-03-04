@@ -111,7 +111,9 @@ type Options = {
 }
 ```
 
-### Volar
+### Vue Language Tools (Volar)
+
+For Vue Language Tools (Volar) < 2.0, please use `unplugin-vue-named-export@0.3.0`
 
 Support only pascal case named export for Volar.
 
@@ -124,9 +126,9 @@ Support only pascal case named export for Volar.
 
     "namedExport": {
       // defaults to false
-      "removeDefault": false
-    }
-  }
+      "removeDefault": false,
+    },
+  },
 }
 ```
 
