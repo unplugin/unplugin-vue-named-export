@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
-"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
+"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 "use strict";
@@ -44,7 +44,7 @@ export { UpperCase, UpperCase as default };
 `;
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
-"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
+"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 "use strict";
@@ -67,7 +67,7 @@ export { Basic, Basic as default };
 `;
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
-"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
+"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 "use strict";
@@ -90,7 +90,7 @@ export { ElButton, ElButton as default };
 `;
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
-"import { openBlock, renderSlot, createElementBlock, defineComponent } from 'vue';
+"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
 
 "use strict";
