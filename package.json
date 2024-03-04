@@ -86,7 +86,7 @@
     "@sxzz/prettier-config": "^2.0.1",
     "@types/node": "^20.11.24",
     "@vue-macros/test-utils": "^1.4.0",
-    "@vue/language-core": "^1.8.27",
+    "@vue/language-core": "^2.0.3",
     "bumpp": "^9.3.1",
     "change-case": "^5.4.3",
     "eslint": "^8.57.0",

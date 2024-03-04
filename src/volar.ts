@@ -1,12 +1,12 @@
-import { FileKind, type VueLanguagePlugin, replace } from '@vue/language-core'
+import { type VueLanguagePlugin, replace } from '@vue/language-core'
 import { resolveName } from './core/utils'
 
 const plugin: VueLanguagePlugin = ({ vueCompilerOptions }) => {
   return {
     name: 'vue-named-export',
-    version: 1,
-    resolveEmbeddedFile(fileName, sfc, embeddedFile) {
-      if (embeddedFile.kind !== FileKind.TypeScriptHostFile) return
+    version: 2,
+    resolveEmbeddedCode(fileName, sfc, embeddedFile) {
+      if (embeddedFile.id !== 'script_ts') return
       const exportedName = resolveName(fileName)
       // @ts-expect-error
       if (vueCompilerOptions.namedExport?.removeDefault)
