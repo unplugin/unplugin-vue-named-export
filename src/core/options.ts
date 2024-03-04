@@ -10,7 +10,7 @@ export interface Options {
    * Convert filename to export name
    * @default pascalCaseFn
    */
-  resolveName?(id: string): string | Promise<string>
+  resolveName?: (id: string) => string | Promise<string>
   /**
    * Whether to keep default export
    * @default false
