@@ -76,6 +76,7 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^5.1.0",
+    "@vue/language-core": "^2.0.6",
     "ast-kit": "^0.12.1",
     "magic-string-ast": "^0.3.0",
     "unplugin": "^1.9.0"
@@ -86,7 +87,6 @@
     "@sxzz/prettier-config": "^2.0.1",
     "@types/node": "^20.11.25",
     "@vue-macros/test-utils": "^1.4.0",
-    "@vue/language-core": "^2.0.6",
     "bumpp": "^9.4.0",
     "change-case": "^5.4.3",
     "eslint": "^8.57.0",
