@@ -1,7 +1,7 @@
 import { createUnplugin } from 'unplugin'
 import { babelParse, getLang } from 'ast-kit'
 import { createFilter } from '@rollup/pluginutils'
-import { MagicStringBase, generateTransform } from 'magic-string-ast'
+import { MagicString, generateTransform } from 'magic-string-ast'
 import { type Options, resolveOption } from './core/options'
 import { resolveName } from './core/utils'
 import type * as t from '@babel/types'
@@ -36,7 +36,7 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
       )
       if (!defaultExport) return
 
-      const s = new MagicStringBase(code)
+      const s = new MagicString(code)
       const resolvedName = await (options.resolveName || resolveName)(id)
 
       s.overwrite(
