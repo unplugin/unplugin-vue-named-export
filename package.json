@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.24.6",
-    "@sxzz/eslint-config": "^3.11.0",
+    "@sxzz/eslint-config": "^4.1.6",
     "@sxzz/prettier-config": "^2.0.2",
     "@types/node": "^20.14.0",
     "@vue-macros/test-utils": "^1.4.0",
