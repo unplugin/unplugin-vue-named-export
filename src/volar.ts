@@ -5,7 +5,7 @@ import type { VueLanguagePlugin } from '@vue/language-core'
 const plugin: VueLanguagePlugin = ({ vueCompilerOptions }) => {
   return {
     name: 'vue-named-export',
-    version: 2,
+    version: 2.1,
     resolveEmbeddedCode(fileName, sfc, embeddedFile) {
       if (embeddedFile.id !== 'script_ts') return
       const exportedName = resolveName(fileName)

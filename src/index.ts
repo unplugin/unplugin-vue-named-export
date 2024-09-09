@@ -1,8 +1,8 @@
-import { createUnplugin } from 'unplugin'
-import { babelParse, getLang } from 'ast-kit'
 import { createFilter } from '@rollup/pluginutils'
-import { MagicString, generateTransform } from 'magic-string-ast'
-import { type Options, resolveOption } from './core/options'
+import { babelParse, getLang } from 'ast-kit'
+import { generateTransform, MagicString } from 'magic-string-ast'
+import { createUnplugin } from 'unplugin'
+import { resolveOption, type Options } from './core/options'
 import { resolveName } from './core/utils'
 import type * as t from '@babel/types'
 

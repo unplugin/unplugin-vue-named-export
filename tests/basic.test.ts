@@ -1,12 +1,12 @@
 import path from 'node:path'
-import { describe } from 'vitest'
 import {
+  rollupBuild,
   RollupEsbuildPlugin,
   RollupRemoveVueFilePathPlugin,
   RollupVue,
-  rollupBuild,
   testFixtures,
 } from '@vue-macros/test-utils'
+import { describe } from 'vitest'
 import VueNamedExport from '../src/vite'
 
 describe('fixtures', async () => {
