@@ -79,6 +79,7 @@
     "@vue/language-core": "^2.1.6",
     "ast-kit": "^1.1.0",
     "magic-string-ast": "^0.6.2",
+    "muggle-string": "^0.4.1",
     "unplugin": "^1.13.1"
   },
   "devDependencies": {
