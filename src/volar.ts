@@ -1,5 +1,6 @@
-import { type VueLanguagePlugin, replace } from '@vue/language-core'
+import { replace } from 'muggle-string'
 import { resolveName } from './core/utils'
+import type { VueLanguagePlugin } from '@vue/language-core'
 
 const plugin: VueLanguagePlugin = ({ vueCompilerOptions }) => {
   return {
