@@ -14,7 +14,7 @@ describe('fixtures', async () => {
     ['tests/fixtures/*.vue'],
     (args, id) =>
       rollupBuild(id, [
-        RollupVue(),
+        RollupVue({ isProduction: true }),
         VueNamedExport(),
         RollupRemoveVueFilePathPlugin(),
         RollupEsbuildPlugin({

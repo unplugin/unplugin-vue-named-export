@@ -1,8 +1,8 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '[NULL]/plugin-vue/export-helper';
+"// ElCard.js
+import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -17,15 +17,15 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const ElCard = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const ElCard = _sfc_main;
 
 export { ElCard, ElCard as default };
 "
 `;
 
 exports[`fixtures > tests/fixtures/UPPER-CASE.vue 1`] = `
-"import { defineComponent } from 'vue';
-import _export_sfc from '[NULL]/plugin-vue/export-helper';
+"// UPPER-CASE.js
+import { defineComponent } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -37,15 +37,15 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const UpperCase = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const UpperCase = _sfc_main;
 
 export { UpperCase, UpperCase as default };
 "
 `;
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '[NULL]/plugin-vue/export-helper';
+"// basic.js
+import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -60,15 +60,15 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const Basic = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const Basic = _sfc_main;
 
 export { Basic, Basic as default };
 "
 `;
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '[NULL]/plugin-vue/export-helper';
+"// el-button.js
+import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -83,15 +83,15 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const ElButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const ElButton = _sfc_main;
 
 export { ElButton, ElButton as default };
 "
 `;
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
-"import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
-import _export_sfc from '[NULL]/plugin-vue/export-helper';
+"// my_button.js
+import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -106,7 +106,7 @@ var _sfc_main = /* @__PURE__ */ defineComponent({
   }
 });
 
-const MyButton = /* @__PURE__ */ _export_sfc(_sfc_main, [__FILE__]);
+const MyButton = _sfc_main;
 
 export { MyButton, MyButton as default };
 "
