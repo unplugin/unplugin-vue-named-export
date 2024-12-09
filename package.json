@@ -81,7 +81,7 @@
     "ast-kit": "^1.1.0",
     "magic-string-ast": "^0.6.2",
     "muggle-string": "^0.4.1",
-    "unplugin": "^1.14.1"
+    "unplugin": "^2.0.0"
   },
   "devDependencies": {
     "@babel/types": "^7.25.6",
