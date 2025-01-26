@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-named-export",
   "version": "0.5.0",
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.15.4",
   "description": "Named export for Vue SFC.",
   "type": "module",
   "keywords": [
@@ -76,31 +76,31 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.1.0",
-    "@vue/language-core": "^2.1.6",
-    "ast-kit": "^1.1.0",
-    "magic-string-ast": "^0.6.2",
+    "@rollup/pluginutils": "^5.1.4",
+    "@vue/language-core": "^2.2.0",
+    "ast-kit": "^1.4.0",
+    "magic-string-ast": "^0.7.0",
     "muggle-string": "^0.4.1",
-    "unplugin": "^2.0.0"
+    "unplugin": "^2.1.2"
   },
   "devDependencies": {
-    "@babel/types": "^7.25.6",
-    "@sxzz/eslint-config": "^4.2.0",
-    "@sxzz/prettier-config": "^2.0.2",
-    "@types/node": "^22.5.5",
-    "@vue-macros/test-utils": "^1.7.0",
-    "bumpp": "^9.5.2",
+    "@babel/types": "^7.26.7",
+    "@sxzz/eslint-config": "^4.6.0",
+    "@sxzz/prettier-config": "^2.1.0",
+    "@types/node": "^22.10.10",
+    "@vue-macros/test-utils": "^1.7.1",
+    "bumpp": "^10.0.1",
     "change-case": "^5.4.4",
-    "eslint": "^9.10.0",
-    "fast-glob": "^3.3.2",
-    "prettier": "^3.3.3",
-    "tsup": "^8.2.4",
-    "tsx": "^4.19.1",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.5",
-    "vitest": "^2.1.1",
-    "vue": "^3.5.5",
-    "vue-tsc": "^2.1.6"
+    "eslint": "^9.19.0",
+    "fast-glob": "^3.3.3",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vitest": "^3.0.4",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
   },
   "engines": {
     "node": ">=16.14.0"
