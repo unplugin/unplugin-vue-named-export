@@ -104,7 +104,7 @@ type Options = {
    */
   resolveName?: (id: string) => string | Promise<string>
   /**
-   * Whether to keep default export
+   * Whether to remove default export
    * @default false
    */
   removeDefault?: boolean
