@@ -47,6 +47,12 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
 
       if (!options.removeDefault) {
         s.appendLeft(defaultExport.end!, `\nexport default ${resolvedName};`)
+      } else {
+        // hack Vite HMR
+        s.replace(
+          /const \{ default: updated, (.*) \} = mod/,
+          (_, $1) => `const { "${resolvedName}": updated, ${$1} } = mod`,
+        )
       }
 
       return generateTransform(s, id)
