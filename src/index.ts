@@ -57,5 +57,34 @@ export default createUnplugin<Options | undefined, false>((rawOptions = {}) => {
 
       return generateTransform(s, id)
     },
+
+    vite: {
+      config(config, { command }) {
+        if (command !== 'serve') return
+        return {
+          optimizeDeps: {
+            esbuildOptions: {
+              plugins: [
+                {
+                  name: `${name}-optimize-deps`,
+                  setup(build) {
+                    build.onLoad({ filter: /\.vue($|\?)/ }, async (args) => {
+                      const resolvedName = await (
+                        options.resolveName || resolveName
+                      )(args.path)
+                      let js = `export const ${resolvedName} = {}`
+                      if (!options.removeDefault) {
+                        js += `\nexport default ${resolvedName}`
+                      }
+                      return { contents: js }
+                    })
+                  },
+                },
+              ],
+            },
+          },
+        }
+      },
+    },
   }
 })
