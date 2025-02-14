@@ -71,7 +71,7 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && vue-tsc --noEmit -p tests/fixtures/tsconfig.json",
     "release": "bumpp && pnpm publish",
     "prepublishOnly": "pnpm run build"
   },
