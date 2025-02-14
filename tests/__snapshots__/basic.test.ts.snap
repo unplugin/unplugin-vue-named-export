@@ -2,7 +2,7 @@
 
 exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
 "// ElCard.js
-import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -45,7 +45,7 @@ export { UpperCase, UpperCase as default };
 
 exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "// basic.js
-import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -68,7 +68,7 @@ export { Basic, Basic as default };
 
 exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
 "// el-button.js
-import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
@@ -91,7 +91,7 @@ export { ElButton, ElButton as default };
 
 exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
 "// my_button.js
-import { defineComponent, openBlock, createElementBlock, renderSlot } from 'vue';
+import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
 "use strict";
 var _sfc_main = /* @__PURE__ */ defineComponent({
