@@ -48,6 +48,18 @@
       "require": "./dist/esbuild.cjs",
       "import": "./dist/esbuild.js"
     },
+    "./farm": {
+      "require": "./dist/farm.cjs",
+      "import": "./dist/farm.js"
+    },
+    "./rspack": {
+      "require": "./dist/rspack.cjs",
+      "import": "./dist/rspack.js"
+    },
+    "./rolldown": {
+      "require": "./dist/rolldown.cjs",
+      "import": "./dist/rolldown.js"
+    },
     "./volar": {
       "require": "./dist/volar.cjs",
       "import": "./dist/volar.js"
