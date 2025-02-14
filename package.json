@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-named-export",
   "version": "0.7.0",
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@10.4.0",
   "description": "Named export for Vue SFC.",
   "type": "module",
   "keywords": [
@@ -81,23 +81,23 @@
     "ast-kit": "^1.4.0",
     "magic-string-ast": "^0.7.0",
     "muggle-string": "^0.4.1",
-    "unplugin": "^2.1.2"
+    "unplugin": "^2.2.0"
   },
   "devDependencies": {
-    "@babel/types": "^7.26.7",
-    "@sxzz/eslint-config": "^5.0.0",
-    "@sxzz/prettier-config": "^2.1.1",
-    "@types/node": "^22.12.0",
+    "@babel/types": "^7.26.8",
+    "@sxzz/eslint-config": "^5.1.1",
+    "@sxzz/prettier-config": "^2.2.0",
+    "@types/node": "^22.13.4",
     "@vue-macros/test-utils": "^1.7.1",
-    "bumpp": "^10.0.1",
+    "bumpp": "^10.0.3",
     "change-case": "^5.4.4",
-    "eslint": "^9.19.0",
-    "prettier": "^3.4.2",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
     "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
-    "vite": "^6.0.11",
-    "vitest": "^3.0.4",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5",
     "vue": "^3.5.13",
     "vue-tsc": "^2.2.0"
   },
