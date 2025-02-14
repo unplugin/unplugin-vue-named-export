@@ -1,4 +1,4 @@
-import type { FilterPattern } from '@rollup/pluginutils'
+import type { FilterPattern } from 'unplugin-utils'
 
 type MarkRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>
 
