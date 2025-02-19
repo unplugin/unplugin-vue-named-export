@@ -1,26 +1,21 @@
 import path from 'node:path'
-import {
-  rollupBuild,
-  RollupEsbuildPlugin,
-  RollupRemoveVueFilePathPlugin,
-  RollupVue,
-  testFixtures,
-} from '@vue-macros/test-utils'
+import { rollupBuild, testFixtures } from '@sxzz/test-utils'
+import Oxc from 'unplugin-oxc/rollup'
+import Vue from 'unplugin-vue/rollup'
 import { describe } from 'vitest'
 import VueNamedExport from '../src/vite'
 
 describe('fixtures', async () => {
   await testFixtures(
     ['tests/fixtures/*.vue'],
-    (args, id) =>
-      rollupBuild(id, [
-        RollupVue({ isProduction: true }),
-        VueNamedExport(),
-        RollupRemoveVueFilePathPlugin(),
-        RollupEsbuildPlugin({
-          target: 'esnext',
-        }),
-      ]),
+    async (args, id) =>
+      (
+        await rollupBuild(id, [
+          Vue({ isProduction: true }),
+          VueNamedExport(),
+          Oxc(),
+        ])
+      ).snapshot,
     { cwd: path.resolve(__dirname, '..'), promise: true },
   )
 })
