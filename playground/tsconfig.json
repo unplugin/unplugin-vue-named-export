@@ -9,7 +9,7 @@
     "noUncheckedSideEffectImports": true
   },
   "vueCompilerOptions": {
-    "plugins": ["./volar.cjs"]
+    "plugins": ["../dist/volar"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
