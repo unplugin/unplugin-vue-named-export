@@ -6,7 +6,7 @@
     "isolatedDeclarations": false
   },
   "vueCompilerOptions": {
-    "plugins": ["../../dist/volar.cjs"],
+    "plugins": ["../../dist/volar.js"],
     "namedExport": {
       "removeDefault": false
     }
