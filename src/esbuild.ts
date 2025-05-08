@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Esbuild plugin
@@ -12,10 +12,11 @@ import VueNamedExport from './index'
  * @example
  * ```ts
  * import { build } from 'esbuild'
- * import Starter from 'unplugin-starter/esbuild'
+ * import VueNamedExport from 'unplugin-vue-named-export/esbuild'
  * 
- * build({ plugins: [Starter()] })
+ * build({ plugins: [VueNamedExport()] })
 ```
  */
 const esbuild = VueNamedExport.esbuild as typeof VueNamedExport.esbuild
 export default esbuild
+export { esbuild as 'module.exports' }

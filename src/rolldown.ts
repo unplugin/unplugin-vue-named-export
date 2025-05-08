@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Rolldown plugin
@@ -12,12 +12,13 @@ import VueNamedExport from './index'
  * @example
  * ```ts
  * // rolldown.config.js
- * import Starter from 'unplugin-starter/rolldown'
+ * import VueNamedExport from 'unplugin-vue-named-export/rolldown'
  *
  * export default {
- *   plugins: [Starter()],
+ *   plugins: [VueNamedExport()],
  * }
  * ```
  */
 const rolldown = VueNamedExport.rolldown as typeof VueNamedExport.rolldown
 export default rolldown
+export { rolldown as 'module.exports' }

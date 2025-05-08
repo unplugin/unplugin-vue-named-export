@@ -13,7 +13,7 @@ function getNodeStart(node: t.Node) {
   return node.start!
 }
 
-const VueNamedExport: UnpluginInstance<Options | undefined, false> =
+export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
   createUnplugin((rawOptions = {}) => {
     const options = resolveOption(rawOptions)
     const filter = createFilter(options.include, options.exclude)
@@ -89,4 +89,3 @@ const VueNamedExport: UnpluginInstance<Options | undefined, false> =
       },
     }
   })
-export default VueNamedExport

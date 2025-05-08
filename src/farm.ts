@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Farm plugin
@@ -12,12 +12,13 @@ import VueNamedExport from './index'
  * @example
  * ```ts
  * // farm.config.js
- * import Starter from 'unplugin-starter/farm'
+ * import VueNamedExport from 'unplugin-vue-named-export/farm'
  *
  * export default {
- *   plugins: [Starter()],
+ *   plugins: [VueNamedExport()],
  * }
  * ```
  */
 const farm = VueNamedExport.farm as typeof VueNamedExport.farm
 export default farm
+export { farm as 'module.exports' }

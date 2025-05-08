@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Vite plugin
@@ -12,12 +12,13 @@ import VueNamedExport from './index'
  * @example
  * ```ts
  * // vite.config.ts
- * import Starter from 'unplugin-starter/vite'
+ * import VueNamedExport from 'unplugin-vue-named-export/vite'
  *
  * export default defineConfig({
- *   plugins: [Starter()],
+ *   plugins: [VueNamedExport()],
  * })
  * ```
  */
 const vite = VueNamedExport.vite as typeof VueNamedExport.vite
 export default vite
+export { vite as 'module.exports' }

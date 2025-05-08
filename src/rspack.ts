@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Rspack plugin
@@ -12,12 +12,13 @@ import VueNamedExport from './index'
  * @example
  * ```js
  * // rspack.config.js
- * import Starter from 'unplugin-starter/rspack'
+ * import VueNamedExport from 'unplugin-vue-named-export/rspack'
  *
  * default export {
- *  plugins: [Starter()],
+ *  plugins: [VueNamedExport()],
  * }
  * ```
  */
 const rspack = VueNamedExport.rspack as typeof VueNamedExport.rspack
 export default rspack
+export { rspack as 'module.exports' }

@@ -29,42 +29,15 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
-    },
-    "./vite": {
-      "require": "./dist/vite.cjs",
-      "import": "./dist/vite.js"
-    },
-    "./webpack": {
-      "require": "./dist/webpack.cjs",
-      "import": "./dist/webpack.js"
-    },
-    "./rollup": {
-      "require": "./dist/rollup.cjs",
-      "import": "./dist/rollup.js"
-    },
-    "./esbuild": {
-      "require": "./dist/esbuild.cjs",
-      "import": "./dist/esbuild.js"
-    },
-    "./farm": {
-      "require": "./dist/farm.cjs",
-      "import": "./dist/farm.js"
-    },
-    "./rspack": {
-      "require": "./dist/rspack.cjs",
-      "import": "./dist/rspack.js"
-    },
-    "./rolldown": {
-      "require": "./dist/rolldown.cjs",
-      "import": "./dist/rolldown.js"
-    },
-    "./volar": {
-      "require": "./dist/volar.cjs",
-      "import": "./dist/volar.js"
-    },
+    ".": "./dist/index.js",
+    "./vite": "./dist/vite.js",
+    "./webpack": "./dist/webpack.js",
+    "./rollup": "./dist/rollup.js",
+    "./esbuild": "./dist/esbuild.js",
+    "./farm": "./dist/farm.js",
+    "./rspack": "./dist/rspack.js",
+    "./rolldown": "./dist/rolldown.js",
+    "./volar": "./dist/volar.js",
     "./*": "./*"
   },
   "typesVersions": {
@@ -117,7 +90,7 @@
     "vue-tsc": "^2.2.10"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.18.0"
   },
   "prettier": "@sxzz/prettier-config"
 }

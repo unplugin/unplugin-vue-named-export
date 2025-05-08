@@ -4,7 +4,7 @@
  * @module
  */
 
-import VueNamedExport from './index'
+import { VueNamedExport } from './index'
 
 /**
  * Webpack plugin
@@ -12,12 +12,13 @@ import VueNamedExport from './index'
  * @example
  * ```js
  * // webpack.config.js
- * import Starter from 'unplugin-starter/webpack'
+ * import VueNamedExport from 'unplugin-vue-named-export/webpack'
  *
  * default export {
- *  plugins: [Starter()],
+ *  plugins: [VueNamedExport()],
  * }
  * ```
  */
 const webpack = VueNamedExport.webpack as typeof VueNamedExport.webpack
 export default webpack
+export { webpack as 'module.exports' }
