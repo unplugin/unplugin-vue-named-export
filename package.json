@@ -62,7 +62,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@vue/language-core": "^2.2.10",
+    "@vue/language-core": "^3.0.1",
     "ast-kit": "^2.0.0",
     "magic-string-ast": "^1.0.0",
     "muggle-string": "^0.4.1",
