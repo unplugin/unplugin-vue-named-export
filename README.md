@@ -1,6 +1,8 @@
-# unplugin-vue-named-export [![npm](https://img.shields.io/npm/v/unplugin-vue-named-export.svg)](https://npmjs.com/package/unplugin-vue-named-export)
+# unplugin-vue-named-export
 
-[![Unit Test](https://github.com/unplugin/unplugin-vue-named-export/actions/workflows/unit-test.yml/badge.svg)](https://github.com/unplugin/unplugin-vue-named-export/actions/workflows/unit-test.yml)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Unit Test][unit-test-src]][unit-test-href]
 
 Named export for Vue SFC.
 
@@ -142,4 +144,13 @@ Support only pascal case named export for Volar.
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [三咲智子](https://github.com/sxzz)
+[MIT](./LICENSE) License © 2023-PRESENT [Kevin Deng](https://github.com/sxzz)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/unplugin-vue-named-export.svg
+[npm-version-href]: https://npmjs.com/package/unplugin-vue-named-export
+[npm-downloads-src]: https://img.shields.io/npm/dm/unplugin-vue-named-export
+[npm-downloads-href]: https://www.npmcharts.com/compare/unplugin-vue-named-export?interval=30
+[unit-test-src]: https://github.com/sxzz/unplugin-vue-named-export/actions/workflows/unit-test.yml/badge.svg
+[unit-test-href]: https://github.com/sxzz/unplugin-vue-named-export/actions/workflows/unit-test.yml
