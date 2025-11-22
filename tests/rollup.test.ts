@@ -5,7 +5,7 @@ import Vue from 'unplugin-vue/rollup'
 import { describe } from 'vitest'
 import VueNamedExport from '../src/vite'
 
-describe('fixtures', async () => {
+describe('rollup', async () => {
   await testFixtures(
     ['tests/fixtures/*.vue'],
     async (args, id) =>

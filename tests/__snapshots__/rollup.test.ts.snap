@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`fixtures > tests/fixtures/ElCard.vue 1`] = `
+exports[`rollup > tests/fixtures/ElCard.vue 1`] = `
 "// ElCard.js
 import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
@@ -20,7 +20,7 @@ export { ElCard, ElCard as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/UPPER-CASE.vue 1`] = `
+exports[`rollup > tests/fixtures/UPPER-CASE.vue 1`] = `
 "// UPPER-CASE.js
 import { defineComponent } from 'vue';
 
@@ -38,7 +38,7 @@ export { UpperCase, UpperCase as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/basic.vue 1`] = `
+exports[`rollup > tests/fixtures/basic.vue 1`] = `
 "// basic.js
 import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
@@ -58,7 +58,7 @@ export { Basic, Basic as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/el-button.vue 1`] = `
+exports[`rollup > tests/fixtures/el-button.vue 1`] = `
 "// el-button.js
 import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
@@ -78,7 +78,7 @@ export { ElButton, ElButton as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/my_button.vue 1`] = `
+exports[`rollup > tests/fixtures/my_button.vue 1`] = `
 "// my_button.js
 import { defineComponent, createElementBlock, openBlock, renderSlot } from 'vue';
 
