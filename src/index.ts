@@ -47,16 +47,16 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
             `export const ${resolvedName} = `,
           )
 
-          if (!options.removeDefault) {
-            s.appendLeft(
-              defaultExport.end!,
-              `\nexport default ${resolvedName};`,
-            )
-          } else {
+          if (options.removeDefault) {
             // hack Vite HMR
             s.replace(
               /const \{ default: updated, (.*) \} = mod/,
               (_, $1) => `const { "${resolvedName}": updated, ${$1} } = mod`,
+            )
+          } else {
+            s.appendLeft(
+              defaultExport.end!,
+              `\nexport default ${resolvedName};`,
             )
           }
 
