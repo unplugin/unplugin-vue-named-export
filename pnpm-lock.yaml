@@ -14,12 +14,12 @@ importers:
       ast-kit:
         specifier: ^2.2.0
         version: 2.2.0
-      magic-string-ast:
-        specifier: ^1.0.3
-        version: 1.0.3
       muggle-string:
         specifier: ^0.4.1
         version: 0.4.1
+      rolldown-string:
+        specifier: ^0.2.1
+        version: 0.2.1
       unplugin:
         specifier: ^2.3.11
         version: 2.3.11
@@ -2037,10 +2037,6 @@ packages:
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
 
-  magic-string-ast@1.0.3:
-    resolution: {integrity: sha512-CvkkH1i81zl7mmb94DsRiFeG9V2fR2JeuK8yDgS8oiZSFa++wWLEgZ5ufEOyLHbvSbD1gTRKv9NdX69Rnvr9JA==}
-    engines: {node: '>=20.19.0'}
-
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
@@ -2381,6 +2377,10 @@ packages:
         optional: true
       vue-tsc:
         optional: true
+
+  rolldown-string@0.2.1:
+    resolution: {integrity: sha512-7H8oH5A8+L96pbBTPCt/rZrwayEhZY5/ejhdk9nRODH32H1v7+bfkaCr+kS15DcGQ7VC1HcWdQVNABFYgrMOzg==}
+    engines: {node: '>=20.19.0'}
 
   rolldown@1.0.0-beta.53:
     resolution: {integrity: sha512-Qd9c2p0XKZdgT5AYd+KgAMggJ8ZmCs3JnS9PTMWkyUfteKlfmKtxJbWTHkVakxwXs1Ub7jrRYVeFeF7N0sQxyw==}
@@ -4450,10 +4450,6 @@ snapshots:
 
   longest-streak@3.1.0: {}
 
-  magic-string-ast@1.0.3:
-    dependencies:
-      magic-string: 0.30.21
-
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -5028,6 +5024,10 @@ snapshots:
       vue-tsc: 3.1.8(typescript@5.9.3)
     transitivePeerDependencies:
       - oxc-resolver
+
+  rolldown-string@0.2.1:
+    dependencies:
+      magic-string: 0.30.21
 
   rolldown@1.0.0-beta.53:
     dependencies:

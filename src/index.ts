@@ -1,5 +1,5 @@
 import { babelParse, getLang } from 'ast-kit'
-import { generateTransform, MagicString } from 'magic-string-ast'
+import { withMagicString } from 'rolldown-string'
 import { createUnplugin, type UnpluginInstance } from 'unplugin'
 import { resolveOption, type Options } from './core/options'
 import { resolveName } from './core/utils'
@@ -28,8 +28,9 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
             exclude: options.exclude,
           },
         },
-        async handler(code, id) {
+        handler: withMagicString(async (s, id) => {
           const lang = getLang(id)
+          const code = s.toString()
 
           const program = babelParse(code, lang)
           const defaultExport = program.body.find(
@@ -38,7 +39,6 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
           )
           if (!defaultExport) return
 
-          const s = new MagicString(code)
           const resolvedName = await (options.resolveName || resolveName)(id)
 
           s.overwrite(
@@ -59,9 +59,7 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
               `\nexport default ${resolvedName};`,
             )
           }
-
-          return generateTransform(s, id)
-        },
+        }),
       },
 
       vite: {
