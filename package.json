@@ -69,7 +69,7 @@
     "ast-kit": "^2.2.0",
     "muggle-string": "^0.4.1",
     "rolldown-string": "^0.2.1",
-    "unplugin": "^2.3.11"
+    "unplugin": "^3.0.0"
   },
   "devDependencies": {
     "@babel/types": "^7.28.5",
