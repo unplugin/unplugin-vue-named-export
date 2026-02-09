@@ -79,7 +79,7 @@
     "@types/node": "^25.0.2",
     "bumpp": "^10.3.2",
     "change-case": "^5.4.4",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "prettier": "^3.7.4",
     "tsdown": "^0.18.0",
     "typescript": "^5.9.3",
