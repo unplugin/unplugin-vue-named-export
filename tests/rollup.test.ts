@@ -2,7 +2,7 @@ import { rollupBuild, testFixtures } from '@sxzz/test-utils'
 import Oxc from 'unplugin-oxc/rollup'
 import Vue from 'unplugin-vue/rollup'
 import { describe } from 'vitest'
-import VueNamedExport from '../src/vite'
+import VueNamedExport from '../src/rollup'
 
 describe('rollup', async () => {
   await testFixtures(
