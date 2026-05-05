@@ -8,7 +8,7 @@ on:
 
 jobs:
   unit-test:
-    uses: sxzz/workflows/.github/workflows/unit-test.yml@v1
+    uses: sxzz/workflows/.github/workflows/unit-test.yml@main
     with:
       typecheck: ''
       test: pnpm run typecheck && pnpm run test
