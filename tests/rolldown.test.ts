@@ -1,4 +1,4 @@
-import { rollupBuild, testFixtures } from '@sxzz/test-utils'
+import { rolldownBuild, testFixtures } from '@sxzz/test-utils'
 import Oxc from 'unplugin-oxc/rollup'
 import Vue from 'unplugin-vue/rollup'
 import { describe } from 'vitest'
@@ -9,7 +9,7 @@ describe('rollup', async () => {
     'fixtures/*.vue',
     async (args, id) =>
       (
-        await rollupBuild(id, [
+        await rolldownBuild(id, [
           Vue({ isProduction: true }),
           VueNamedExport(),
           Oxc(),
