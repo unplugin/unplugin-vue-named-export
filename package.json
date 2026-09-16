@@ -2,7 +2,6 @@
   "name": "unplugin-vue-named-export",
   "type": "module",
   "version": "0.10.0",
-  "packageManager": "pnpm@11.7.0",
   "description": "Named export for Vue SFC.",
   "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
@@ -43,47 +42,53 @@
   "engines": {
     "node": "^22.18.0 || >=24.11.0"
   },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.2",
+      "onFail": "download"
+    }
+  },
   "scripts": {
     "lint": "eslint --cache .",
     "lint:fix": "pnpm run lint --fix",
     "build": "tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
-    "typecheck": "tsgo --noEmit && vue-tsc --noEmit -p tests/fixtures/tsconfig.json",
+    "typecheck": "tsc --noEmit && vue-tsc --noEmit -p tests/fixtures/tsconfig.json",
     "release": "bumpp",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@vue/language-core": "^3.3.5",
-    "ast-kit": "^3.0.0",
+    "@vue/language-core": "^3.3.11",
     "muggle-string": "^0.4.1",
-    "rolldown-string": "^0.3.0",
-    "unplugin": "^3.0.0"
+    "rolldown-string": "^0.3.1",
+    "unplugin": "^3.4.0",
+    "yuku-parser": "^0.10.2"
   },
   "inlinedDependencies": {
     "change-case": "5.4.4"
   },
   "devDependencies": {
-    "@babel/types": "^8.0.0",
-    "@sxzz/eslint-config": "^8.2.1",
-    "@sxzz/prettier-config": "^2.3.1",
-    "@sxzz/test-utils": "^0.5.18",
+    "@sxzz/eslint-config": "^8.6.0",
+    "@sxzz/prettier-config": "^2.3.3",
+    "@sxzz/test-utils": "^0.5.19",
     "@types/node": "^25.9.3",
-    "@typescript/native-preview": "7.0.0-dev.20260616.1",
-    "bumpp": "^11.1.0",
+    "@typescript/native-preview": "npm:typescript@^7.0.2",
+    "bumpp": "^12.3.0",
     "change-case": "^5.4.4",
-    "eslint": "^10.5.0",
-    "prettier": "^3.8.4",
-    "rolldown": "^1.1.1",
-    "tsdown": "^0.22.2",
-    "tsdown-preset-sxzz": "^0.6.0",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.7",
+    "rolldown": "^1.2.9",
+    "tsdown": "^0.23.0",
+    "tsdown-preset-sxzz": "^0.7.1",
     "typescript": "^6.0.3",
     "unplugin-oxc": "^0.6.1",
-    "unplugin-vue": "^7.2.0",
-    "vite": "^8.0.16",
-    "vitest": "^4.1.9",
-    "vue": "^3.5.38",
-    "vue-tsc": "^3.3.5"
+    "unplugin-vue": "^8.0.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1",
+    "vue": "^3.5.42",
+    "vue-tsc": "^3.3.11"
   },
   "prettier": "@sxzz/prettier-config"
 }

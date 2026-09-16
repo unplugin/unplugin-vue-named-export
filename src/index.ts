@@ -1,16 +1,8 @@
-import { babelParse, getLang } from 'ast-kit'
 import { withMagicString } from 'rolldown-string'
 import { createUnplugin, type UnpluginInstance } from 'unplugin'
+import { langFromPath, parse } from 'yuku-parser'
 import { resolveOption, type Options } from './core/options'
 import { resolveName } from './core/utils'
-import type * as t from '@babel/types'
-
-function getNodeStart(node: t.Node) {
-  if (node.leadingComments && node.leadingComments.length > 0) {
-    return node.leadingComments[0].start!
-  }
-  return node.start!
-}
 
 export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
   createUnplugin((rawOptions = {}) => {
@@ -29,22 +21,29 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
           },
         },
         handler: withMagicString(async (s, id) => {
-          const lang = getLang(id)
           const code = s.toString()
 
-          const program = babelParse(code, lang)
+          const { program, tokens, diagnostics } = parse(code, {
+            lang: langFromPath(id.split(/[?#]/, 1)[0]),
+            tokens: true,
+          })
+          const error = diagnostics.find(({ severity }) => severity === 'error')
+          if (error) {
+            throw new SyntaxError(`${id}:${error.start}: ${error.message}`)
+          }
+
           const defaultExport = program.body.find(
-            (node): node is t.ExportDefaultDeclaration =>
-              node.type === 'ExportDefaultDeclaration',
+            (node) => node.type === 'ExportDefaultDeclaration',
           )
           if (!defaultExport) return
 
           const resolvedName = await (options.resolveName || resolveName)(id)
 
           s.overwrite(
-            defaultExport.start!,
-            getNodeStart(defaultExport.declaration),
-            `export const ${resolvedName} = `,
+            defaultExport.start,
+            // Replace only the export/default tokens, preserving comments and parentheses.
+            tokens!.end(tokens!.range(defaultExport)[0] + 1),
+            `export const ${resolvedName} =`,
           )
 
           if (options.removeDefault) {
@@ -54,10 +53,7 @@ export const VueNamedExport: UnpluginInstance<Options | undefined, false> =
               (_, $1) => `const { "${resolvedName}": updated, ${$1} } = mod`,
             )
           } else {
-            s.appendLeft(
-              defaultExport.end!,
-              `\nexport default ${resolvedName};`,
-            )
+            s.appendLeft(defaultExport.end, `\nexport default ${resolvedName};`)
           }
         }),
       },
