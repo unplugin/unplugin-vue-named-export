@@ -46,7 +46,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.4.2",
+      "version": "12.11.2",
       "onFail": "download"
     }
   },
@@ -65,7 +65,7 @@
     "muggle-string": "^0.4.1",
     "rolldown-string": "^0.3.1",
     "unplugin": "^3.4.0",
-    "yuku-parser": "^0.10.2"
+    "yuku-parser": "^0.18.0"
   },
   "inlinedDependencies": {
     "change-case": "5.4.4"
